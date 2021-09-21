@@ -1,0 +1,17 @@
+<div class="container mt-5">
+  <button class="btn-primary my-3" (click)="buscarUsuarios()">Buscar</button>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Nombre</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let usuario of usuarios">
+        <td>{{ usuario.usuId }}</td>
+        <td>{{ usuario.nombre }} {{ usuario.apellido }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
